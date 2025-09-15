@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tugas Pemdas energi potensial"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-15 07:13:45 AM"/>
+        <attribute name="created" value="TGVub3ZvO0xBUFRPUC1TSjVCS0ZFMDsyMDI1LTA5LTA5OzA2OjM5OjMyIFBNOzI5Njg="/>
+        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1TSjVCS0ZFMDsyMDI1LTA5LTE1OzA3OjEzOjQ1IEFNOzI7MzA1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="massa, kecepatan, ketinggian, potensial, kinetik, mekanik" type="Real" array="False" size=""/>
+            <output expression="&quot;Menghitung energi potensial, kinetik, dan mekanik&quot;" newline="True"/>
+            <output expression="&quot;Massa = &quot;" newline="True"/>
+            <input variable="massa"/>
+            <output expression="&quot;Kecepatan = &quot;" newline="True"/>
+            <input variable="kecepatan"/>
+            <output expression="&quot;Ketinggian = &quot;" newline="True"/>
+            <input variable="ketinggian"/>
+            <assign variable="potensial" expression="massa * 10 * ketinggian"/>
+            <assign variable="kinetik" expression="1/2*massa*(kecepatan*kecepatan)"/>
+            <assign variable="mekanik" expression="potensial+kinetik"/>
+            <output expression="&quot;Energi potensial = &quot;&amp;potensial" newline="True"/>
+            <output expression="&quot;Energi kinetik = &quot;&amp;kinetik" newline="True"/>
+            <output expression="&quot;Energi mekanik = &quot;&amp;mekanik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
